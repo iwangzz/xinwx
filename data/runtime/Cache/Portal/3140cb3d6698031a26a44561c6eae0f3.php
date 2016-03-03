@@ -48,114 +48,109 @@ var GV = {
 <body>
 	<div class="wrap js-check-wrap">
 		<ul class="nav nav-tabs">
-			<li class="active"><a href="#A" data-toggle="tab"><?php echo L('GENERAL_SETTING');?></a></li>
-			<li><a href="#B" data-toggle="tab"><?php echo L('SEO_SETTING');?></a></li>
-			<li><a href="#C" data-toggle="tab"><?php echo L('TEMPLATE_SETTING');?></a></li>
-		</ul>
-		<form class="form-horizontal js-ajax-form" action="<?php echo U('AdminTerm/edit_post');?>" method="post">
-			<input type="hidden" name="term_id" value="<?php echo ($data["term_id"]); ?>" />
+	        <li class="active"><a href="#A" data-toggle="tab"><?php echo L('GENERAL_SETTING');?></a></li>
+	        <li><a href="#B" data-toggle="tab"><?php echo L('SEO_SETTING');?></a></li>
+	        <li><a href="#C" data-toggle="tab"><?php echo L('TEMPLATE_SETTING');?></a></li>
+	    </ul>
+		<form class="form-horizontal js-ajax-form" action="<?php echo U('AdminTerm/add_post');?>" method="post">
 			<div class="tabbable">
-				<div class="tab-content">
-					<div class="tab-pane active" id="A">
+		        <div class="tab-content">
+		          <div class="tab-pane active" id="A">
 						<fieldset>
 							<div class="control-group">
 								<label class="control-label"><?php echo L('PARENT');?></label>
 								<div class="controls">
 									<select name="parent">
-										<option value="0"><?php echo L('ROOT');?></option> <?php echo ($terms_tree); ?>
+										<option value="0"><?php echo L('ROOT');?></option>
+										<?php echo ($terms_tree); ?>
 									</select>
 								</div>
 							</div>
 							<div class="control-group">
 								<label class="control-label"><?php echo L('NAME');?></label>
 								<div class="controls">
-									<input type="text" name="name" value="<?php echo ($data["name"]); ?>"><span class="form-required">*</span>
+									<input type="text" name="name" value=""><span class="form-required">*</span>
 								</div>
 							</div>
 							<div class="control-group">
 								<label class="control-label"><?php echo L('CATEGORY_DESCRIPTION');?></label>
 								<div class="controls">
-									<textarea name="description" rows="5" cols="57"><?php echo ($data["description"]); ?></textarea>
+									<textarea name="description" rows="5" cols="57"></textarea>
 								</div>
 							</div>
 							<div class="control-group">
 								<label class="control-label"><?php echo L('CATEGORY_TYPE');?></label>
 								<div class="controls">
 									<select name="taxonomy">
-										<?php if(is_array($taxonomys)): foreach($taxonomys as $key=>$vo): $selected=$data['taxonomy']==$key?"selected":"" ?>
-										<option value="<?php echo ($key); ?>"<?php echo ($selected); ?>><?php echo ($vo); ?></option><?php endforeach; endif; ?>
+										<?php if(is_array($taxonomys)): foreach($taxonomys as $key=>$vo): ?><option value="<?php echo ($key); ?>"><?php echo ($vo); ?></option><?php endforeach; endif; ?>
 									</select>
 								</div>
 							</div>
 							<div class="control-group">
 								<label class="control-label"><?php echo L('THUMBNAIL');?></label>
 								<div class="controls">
-									<input type='hidden' name='smeta[thumb]' id='thumb' value="<?php echo ((isset($smeta["thumb"]) && ($smeta["thumb"] !== ""))?($smeta["thumb"]):''); ?>">
-									<a href='javascript:void(0);' onclick="flashupload('thumb_images', 'aa','thumb',thumb_images,'1,jpg|jpeg|gif|png|bmp,1,,,1','','','');return false;">
-										<?php if(empty($smeta['thumb'])): ?><img src="/admin/themes/simplebootx/Public/assets/images/default-thumbnail.png" id='thumb_preview' width='135' height='113' style='cursor: hand' />
-											<?php else: ?>
-											<img src="<?php echo sp_get_asset_upload_path($smeta['thumb']);?>" id='thumb_preview' width='135' height='113' style='cursor: hand' /><?php endif; ?>
+									<input type="hidden" name="smeta[thumb]" id="thumb" value="">
+									<a href="javascript:void(0);" onclick="flashupload('thumb_images', 'aa','thumb',thumb_images,'1,jpg|jpeg|gif|png|bmp,1,,,1','','','');return false;">
+										<img src="/admin/themes/simplebootx/Public/assets/images/default-thumbnail.png" id="thumb_preview" width="135" style="cursor: hand" />
 									</a>
 									<input type="button" class="btn btn-small" onclick="$('#thumb_preview').attr('src','/admin/themes/simplebootx/Public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;" value="<?php echo L('CANCEL');?>">
 								</div>
 							</div>
 						</fieldset>
-					</div>
-					<div class="tab-pane" id="B">
+		          </div>
+		          <div class="tab-pane" id="B">
 						<fieldset>
 							<div class="control-group">
 								<label class="control-label"><?php echo L('SEO_TITLE');?></label>
 								<div class="controls">
-									<input type="text" name="seo_title" value="<?php echo ($data["seo_title"]); ?>">
+									<input type="text" name="seo_title" value="">
 								</div>
 							</div>
 							<div class="control-group">
 								<label class="control-label"><?php echo L('SEO_KEYWORDS');?></label>
 								<div class="controls">
-									<input type="text" name="seo_keywords" value="<?php echo ($data["seo_keywords"]); ?>">
+									<input type="text" name="seo_keywords" value="">
 								</div>
 							</div>
 							<div class="control-group">
 								<label class="control-label"><?php echo L('SEO_DESCRIPTION');?></label>
 								<div class="controls">
-									<textarea name="seo_description" rows="5" cols="57"><?php echo ($data["seo_description"]); ?></textarea>
+									<textarea name="seo_description" rows="5" cols="57"></textarea>
 								</div>
 							</div>
 						</fieldset>
-					</div>
-					<div class="tab-pane" id="C">
+		          </div>
+		          <div class="tab-pane" id="C">
 						<?php $tpl_list=sp_admin_get_tpl_file_list(); ?>
 						<fieldset>
 							<div class="control-group">
 								<label class="control-label"><?php echo L('LIST_TEMPLATE');?></label>
 								<div class="controls">
 									<?php $list_tpls=$tpl_list; unset($list_tpls['list']); ?>
-									<select name="list_tpl">
-										<option value="list">list<?php echo C("TMPL_TEMPLATE_SUFFIX");?></option>
-										<?php if(is_array($list_tpls)): foreach($list_tpls as $key=>$vo): $template_selected=$data['list_tpl']==$vo?"selected":""; ?>
-											<option value="<?php echo ($vo); ?>"<?php echo ($template_selected); ?>><?php echo ($vo); echo C("TMPL_TEMPLATE_SUFFIX");?></option><?php endforeach; endif; ?>
-									</select>
+				              		<select  name="list_tpl">
+				              			<option value="list">list<?php echo C("TMPL_TEMPLATE_SUFFIX");?></option>
+				              			<?php if(is_array($list_tpls)): foreach($list_tpls as $key=>$vo): ?><option value="<?php echo ($vo); ?>"><?php echo ($vo); echo C("TMPL_TEMPLATE_SUFFIX");?></option><?php endforeach; endif; ?>
+				              		</select>
 								</div>
 							</div>
 							<div class="control-group">
 								<label class="control-label"><?php echo L('ARTICLE_TEMPLATE');?></label>
 								<div class="controls">
 									<?php $article_tpls=$tpl_list; unset($article_tpls['article']); ?>
-									<select name="one_tpl">
-										<option value="article">article<?php echo C("TMPL_TEMPLATE_SUFFIX");?></option>
-										<?php if(is_array($article_tpls)): foreach($article_tpls as $key=>$vo): $template_selected=$data['one_tpl']==$vo?"selected":""; ?>
-											<option value="<?php echo ($vo); ?>"<?php echo ($template_selected); ?>><?php echo ($vo); echo C("TMPL_TEMPLATE_SUFFIX");?></option><?php endforeach; endif; ?>
-									</select>
+				              		<select  name="one_tpl">
+				              			<option value="article">article<?php echo C("TMPL_TEMPLATE_SUFFIX");?></option>
+				              			<?php if(is_array($article_tpls)): foreach($article_tpls as $key=>$vo): ?><option value="<?php echo ($vo); ?>"><?php echo ($vo); echo C("TMPL_TEMPLATE_SUFFIX");?></option><?php endforeach; endif; ?>
+				              		</select>
 								</div>
 							</div>
 						</fieldset>
-					</div>
-				</div>
-			</div>
-			<div class="form-actions">
-				<button class="btn btn-primary js-ajax-submit" type="submit"><?php echo L('SAVE');?></button>
-				<a class="btn" href="<?php echo U('AdminTerm/index');?>"><?php echo L('BACK');?></a>
-			</div>
+		          </div>
+		        </div>
+		    </div>
+		    <div class="form-actions">
+		     	<button class="btn btn-primary js-ajax-submit"type="submit"><?php echo L('ADD');?></button>
+		      	<a class="btn" href="<?php echo U('AdminTerm/index');?>"><?php echo L('BACK');?></a>
+		    </div>
 		</form>
 	</div>
 	<script type="text/javascript" src="/public/js/common.js"></script>

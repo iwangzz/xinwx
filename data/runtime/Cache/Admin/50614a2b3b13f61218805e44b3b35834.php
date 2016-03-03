@@ -44,46 +44,31 @@ var GV = {
 			z-index:9999;
 		}
 	</style><?php endif; ?>
+<style>
+li {
+	list-style: none;
+}
+</style>
 </head>
 <body>
 	<div class="wrap">
-		<ul class="nav nav-tabs">
-			<li><a href="<?php echo U('price/price');?>">奖品列表</a></li>
-			<li class="active"><a href="<?php echo U('price/add');?>">添加奖品</a></li>
-		</ul>
-		<form class="form-horizontal js-ajax-form" method="post" action="<?php echo U('Price/add_post');?>">
-			<fieldset>
-				<div class="control-group">
-					<label class="control-label" for="input-user_nicename">名称</label>
-					<div class="controls">
-						<input type="text" id="input-user_nicename" name="name" value="红包" >
-					</div>
+		<div id="error_tips">
+			<h2><?php echo ($msgTitle); ?></h2>
+			<div class="error_cont">
+				<ul>
+					<li><?php echo ($message); ?></li>
+				</ul>
+				<div class="error_return">
+					<a href="<?php echo ($jumpUrl); ?>" class="btn">返回</a>
 				</div>
-				
-				<div class="control-group">
-					<label class="control-label" for="input-birthday">单位</label>
-					<div class="controls">
-						<input class="js-date" type="text" id="input-birthday" name="unit" value="元">
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label" for="input-user_url">概率</label>
-					<div class="controls">
-						<input type="text" id="input-user_url"name="chance" value="10">
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label" for="input-user_url">数额</label>
-					<div class="controls">
-						<input type="text" id="input-user_url" name="account" value="1">
-					</div>
-				</div>
-				<div class="form-actions">
-					<button type="submit" class="btn btn-primary js-ajax-submit"><?php echo L('SAVE');?></button>
-				</div>
-			</fieldset>
-		</form>
+			</div>
+		</div>
 	</div>
 	<script src="/public/js/common.js"></script>
+	<script>
+		setTimeout(function() {
+			location.href = '<?php echo ($jumpUrl); ?>';
+		}, 3000);
+	</script>
 </body>
 </html>

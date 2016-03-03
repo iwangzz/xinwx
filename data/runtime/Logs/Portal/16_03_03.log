@@ -1,0 +1,177 @@
+[ 2016-03-03T14:23:43+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T14:23:46+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T14:24:00+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T14:24:30+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T14:25:35+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T14:25:53+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T14:26:23+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T14:26:57+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T14:26:59+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T14:42:43+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T14:43:43+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T14:47:54+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T14:47:56+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T14:47:57+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T14:48:09+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T14:56:07+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T14:56:11+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:00:41+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=index&menuid=7
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-03-03T15:01:37+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `xy_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xy_terms` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\app\xinyurui\simplewind\Core\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\app\xinyurui\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `xy_terms` (`parent`,`name`,`description`,`taxonomy`,`smeta`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('0','关于我们','关于我们','article','{\"thumb\":\"\"}','','','','list','article') [ RunTime:0.0000s ]
+SQL: UPDATE `xy_terms` SET `path`='0-13' WHERE ( term_id=13 ) [ RunTime:0.0000s ]
+
+[ 2016-03-03T15:01:39+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=index&menuid=7
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-03-03T15:01:41+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=add&term=
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-03-03T15:03:17+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xy_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+SQL: SHOW COLUMNS FROM `xy_posts` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xy_terms` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xy_term_relationships` [ RunTime:0.0010s ]
+SQL: INSERT INTO `xy_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_modified`,`post_status`,`istop`,`recommended`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('关于我们','关于我们','关于我们','关于我们','2016-03-03 15:01:41','1','0','0','<p><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑, 黑体; font-size: 14px; line-height: 22px; background-color: rgb(255, 255, 255);\">&nbsp; &nbsp; &nbsp; 河南新雨瑞饮品有限公司济源市北海创业园区，这里北依太行山，与山西省晋城市毗邻；南临黄河，与古都洛阳市隔河相望；西距王屋，与山西省运城市接壤；东临华北平原，与焦作市相连，自古有“豫西北门户”之称，交通便利，环境宜人。&nbsp;</span></p><p><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑, 黑体; font-size: 14px; line-height: 22px; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑, 黑体; font-size: 14px; line-height: 22px; background-color: rgb(255, 255, 255);\">&nbsp; &nbsp; &nbsp; 公司是生产碳酸饮料、乳酸菌饮料、果汁饮料、功能饮料的现代化公司。目前拥有总资产6000万元，占地面积3万多平方米，建筑面积10000多平方米，员工300余人，高级科技人员20人，拥有价值3000万元的大型各类碳酸饮料、奶饮料、功能饮料、果汁饮料生产线6条和全自动包装设备。</span></span></p><p><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑, 黑体; font-size: 14px; line-height: 22px; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑, 黑体; font-size: 14px; line-height: 22px; background-color: rgb(255, 255, 255);\">&nbsp; &nbsp; &nbsp; 公司围绕“高起点、高层次、突破性、竞争力”为基点，导入ISO9001:2000质量管理体系要求，坚持以八项质量管理原则为基础的科学管理方法，坚持以人为本，诚信经营。 依托得天独厚的自然资源，应用先进的科学技术和工艺方法， 精益求精，从根本上保证产品的质量安全；通过质量管理体系的有效运行并持续改进，为消费者提供高品质产品和优质服务，竭尽全力满足合同要求和顾客期望，努力打造“新雨瑞”饮料品牌。&nbsp;</span></span></p><p><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑, 黑体; font-size: 14px; line-height: 22px; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑, 黑体; font-size: 14px; line-height: 22px; background-color: rgb(255, 255, 255);\">&nbsp; &nbsp; &nbsp; 顾客的满意就是我们的愿望，为顾客创造价值是我们不懈的追求。我们的产品承诺是：“生产真正有使用价值的产品 &nbsp;做大众化品牌 &nbsp;代表健康、和谐的形象.” 我们致力于塑造健康饮食新观念，竭诚为新世纪的美好生活锦上添花，营造时尚。 我们力求领先，只有领先让我们超越；我们强调品质， 只有品质让我们杰出；我们珍惜信誉，只有信誉让我们长久。</span></span></p><p><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑, 黑体; font-size: 14px; line-height: 22px; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑, 黑体; font-size: 14px; line-height: 22px; background-color: rgb(255, 255, 255);\">&nbsp; &nbsp; &nbsp; 以人为本，不断开拓进取，严格的工作管理，优惠的价格及完善的服务是本公司一贯的经营宗旨。竭诚欢迎新老客户，愿与您忠诚合作，共创辉煌！</span></span></p>','2016-03-03 15:03:17','1','{\"thumb\":\"20160303\\/56d7e1978642d.png\"}') [ RunTime:0.0000s ]
+SQL: INSERT INTO `xy_term_relationships` (`term_id`,`object_id`) VALUES ('13','3') [ RunTime:0.0000s ]
+
+[ 2016-03-03T15:03:19+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=index
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-03-03T15:05:23+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:06:23+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:09:15+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:09:16+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:09:40+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:09:42+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:09:45+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:11:07+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:11:08+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:11:26+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:11:27+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:11:38+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:12:14+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:12:52+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:12:57+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:12:58+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:19:34+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:19:35+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:19:40+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:19:43+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:19:58+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T15:20:04+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T19:32:13+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T19:32:25+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T19:32:29+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T19:32:30+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T19:33:03+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T19:33:16+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+
+[ 2016-03-03T19:33:31+08:00 ] 127.0.0.1 /themes/simplebootx/Public/js/maps/swiper.min.js.map
+ERR: 无法加载控制器:Themes
+

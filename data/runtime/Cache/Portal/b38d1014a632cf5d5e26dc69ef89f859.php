@@ -16,7 +16,7 @@
 </head>
 <body>
 <header>
-    <img src="/themes/simplebootx/Public/images/logo.jpg">
+	<a href="/"><img src="/themes/simplebootx/Public/images/logo.jpg"></a>
 </header>
 <div id="banner" class="swiper-container-horizontal">
     <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1125px, 0px, 0px);">
@@ -48,16 +48,14 @@
     <h1>新雨瑞产品列表</h1>
     <ul class="itemlist">
         <?php if(is_array($termsinfo)): foreach($termsinfo as $key=>$vo): ?><li><a href="/index.php/portal/index/prolist/id/<?php echo ($vo["term_id"]); ?>"><img src="/data/upload/<?php echo ($vo["img"]); ?>"></a></li><?php endforeach; endif; ?>
+        <li><a href="/index.php/portal/index/article/id/3"><img src="/themes/simplebootx/Public/images/aboutus.png"></a></li>
     </ul>
 
 </section>
-<footer>
-    <p>河南新雨瑞饮料有限公司 版权所有</p>
-
-    <p>企业地址：河南省济源市北海庙后</p>
-
-    <p>豫ICP备12017726号</p>
-</footer>
+<!--<footer>-->
+    <!--<p>河南新雨瑞饮料有限公司 版权所有</p>-->
+    <!--<p>企业地址：河南省济源市北海庙后</p>-->
+<!--</footer>-->
 <script src="/themes/simplebootx/Public/js/zepto.js"></script>
 <script src="/themes/simplebootx/Public/js/zepto.touch.js"></script>
 <script src="/themes/simplebootx/Public/js/swiper.min.js"></script>

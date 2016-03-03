@@ -16,7 +16,7 @@
 </head>
 <body>
 <header>
-    <img src="/themes/simplebootx/Public/images/logo.jpg">
+	<a href="/"><img src="/themes/simplebootx/Public/images/logo.jpg"></a>
 </header>
 <!--main-warpper-->
 <section class="main-warpper">
@@ -26,24 +26,5 @@
     </ul>
 
 </section>
-<!--     <footer>
-            <p>河南新雨瑞饮料有限公司 版权所有</p>
-            <p>企业地址：河南省济源市北海庙后</p>
-            <p>豫ICP备12017726号</p>
-    </footer> -->
-<script src="/themes/simplebootx/Public/js/zepto.js"></script>
-<script src="/themes/simplebootx/Public/js/zepto.touch.js"></script>
-<script src="/themes/simplebootx/Public/js/swiper.min.js"></script>
-<script type="text/javascript">
-    $(function () {
-        var mySwiper2 = new Swiper('#banner', {
-            autoplay: 3000,
-            visibilityFullFit: true,
-            loop: true,
-            pagination: '.pagination',
-        });
-    });
-
-</script>
 </body>
 </html>

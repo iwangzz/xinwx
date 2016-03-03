@@ -20,7 +20,7 @@ class IndexController extends HomebaseController
     public function index()
     {
         $termsinfo = M('terms');
-        $list = $termsinfo->where('status=1')->limit(10)->select();
+        $list = $termsinfo->where('status=1')->limit(8)->select();
         if (is_array($list) && count($list)) {
             $a = array();
             foreach ($list as $k => $v) {
@@ -67,10 +67,9 @@ class IndexController extends HomebaseController
     {
         $id = I('get.id');
         $articleinfo = M('posts')->where(['id' => $id])->find();
-        $this->assign('article',$articleinfo);
+        $this->assign('article', $articleinfo);
         $this->display(":article");
     }
-
 }
 
 

@@ -82,6 +82,8 @@ footer p {
   padding: 0.1562520;
   padding: 0.15625rem 0.625rem;
   text-align: center;
+  color: #969191;
+  font-size: 0.5rem;
 }
 .pagination {
   position: absolute;
@@ -111,7 +113,7 @@ footer p {
   width: 13.875rem;
   height: 9.84375rem;
   position: absolute;
-  top: 55%;
+  top: 40%;
   left: 50%;
   margin-left: -6.9375rem;
   z-index: 20;
@@ -138,4 +140,54 @@ footer p {
   line-height: 0.375rem;
   font-size: 0.375rem;
   color: #fd0505;
+}
+.error-msg,
+.error-act {
+  width: 12.5rem;
+  height: 6.25rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -6.25rem;
+  z-index: 20;
+  background: #fff;
+  opacity: 0.85;
+  border-radius: 10px;
+}
+.error-msg > h1 {
+  color: #b10805;
+  width: 100%;
+  text-align: center;
+  font-size: 1.25rem;
+  padding: Infinity0 NaN0;
+  padding: 1.56250 00 00;
+  padding: 1.5625rem 0rem 0rem 0rem;
+}
+.error-msg > h1.emsg {
+  font-size: 0.9375rem;
+}
+.error-act > h1 {
+  color: #b10805;
+  width: 100%;
+  height: 6.25rem;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 6.25rem;
+}
+/*产品详情*/
+.item-warpper {
+  width: 100%;
+  height: auto;
+  padding: 0.9375rem;
+}
+.item-warpper .detail-title {
+  margin-bottom: 0.625rem;
+  width: 100%;
+  text-align: center;
+  color: #b10805;
+  line-height: 0.9375rem;
+}
+.item-warpper p img {
+  width: 100%;
+  height: auto;
 }

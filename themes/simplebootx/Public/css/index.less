@@ -1,0 +1,79 @@
+@import (reference) "wap.less";
+body,h1,h2,h3,h4,h5,h6,html,input,li,ol,p,select,table,td,tr,ul{margin:0;padding:0}
+body {
+	background: #FAFAFA;
+	font-family: "Microsoft yahei";
+	.font-size(14);
+	.line-height(20);
+}
+
+header {
+	width:100%;
+	img {
+		width:100%;
+		.height(80);
+	}
+	border-bottom:3px solid #ff6600;
+}
+#banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;}
+
+.main-warpper {width:100%;height:auto;.margin-top(20);}
+.main-warpper h1 {width:100%;.tc();.padding(5,0);.font-size(30);letter-spacing:2px;color:#b10805;}
+.itemlist {width:100%;.height(720);.padding(10,10);}
+.itemlist>li{.width(180);.height(200);float:left;.margin(15,0,15,20);}
+.itemlist>li>a {display:block;width:100%;height:100%;}
+.itemlist>li>a>img {border:0 none;width:100%;height:100%;}
+footer{
+	width:100%;
+	p {.padding(5,20);.tc();color:#969191;.font-size(16);}
+}
+.pagination {
+  position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -20px;
+	z-index: 99
+}
+
+
+/*抽奖活动页面*/
+.act-main {width:100%;.height(1136);background: url(../images/active.png) center center no-repeat; background-size: cover;position: relative;z-index: -10;}
+.mask {width:100%;.height(1136);position: absolute;z-index: 10; background: #000;opacity: 0.4;}
+.mask-main {.width(444);.height(315);position: absolute;top:40%;left:50%;.margin-left(-222);z-index: 20;background: url(../images/lihuabg.png) center center no-repeat; background-size: cover;}
+.mask-main>.red {font-weight:normal;width:100%;.height(35);.tc();.line-height(35);.font-size(30);color:#fd0505;.margin(10,0,20,0);}
+.mask-main>.tip {font-weight:normal;width:100%;.height(12);.tc();.line-height(12);.font-size(12);color:#fd0505;}
+.error-msg,.error-act {
+  .width(400);.height(200);position: absolute;top:40%;left:50%;.margin-left(-200);z-index: 20;background:#fff;opacity: 0.85;border-radius:10px;
+}
+.error-msg>h1 {color:#b10805; width:100%;.tc();.font-size(40);.padding(50,0,0,0)}
+.error-msg>h1.emsg {.font-size(30);}
+.error-act>h1 {color:#b10805; width:100%;.height(200);.tc();.font-size(40);.line-height(200)}
+
+/*产品详情*/
+.item-warpper{
+  width:100%;
+  height:auto;
+  .padding(30);
+  .detail-title {
+	.margin-bottom(20);
+	width:100%;
+	.tc();
+	color:#b10805;
+	.line-height(30);
+  }
+  p img {
+	width:100%;
+	height:auto;
+  }
+}
+
+
+
+
+
+
+
+
