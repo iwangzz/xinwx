@@ -1,0 +1,141 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+input,
+li,
+ol,
+p,
+select,
+table,
+td,
+tr,
+ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #FAFAFA;
+  font-family: "Microsoft yahei";
+  font-size: 0.4375rem;
+  line-height: 0.625rem;
+}
+header {
+  width: 100%;
+  border-bottom: 3px solid #ff6600;
+}
+header img {
+  width: 100%;
+  height: 2.5rem;
+}
+#banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.main-warpper {
+  width: 100%;
+  height: auto;
+  margin-top: 0.625rem;
+}
+.main-warpper h1 {
+  width: 100%;
+  text-align: center;
+  padding: 0.156250;
+  padding: 0.15625rem 0rem;
+  font-size: 0.9375rem;
+  letter-spacing: 2px;
+  color: #b10805;
+}
+.itemlist {
+  width: 100%;
+  height: 22.5rem;
+  padding: 0.312510;
+  padding: 0.3125rem 0.3125rem;
+}
+.itemlist > li {
+  width: 5.625rem;
+  height: 6.25rem;
+  float: left;
+  margin: 0.7515 015;
+  margin: 0.4687520 020 0.4687520;
+  margin: 0.46875rem 0rem 0.46875rem 0.625rem;
+}
+.itemlist > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.itemlist > li > a > img {
+  border: 0 none;
+  width: 100%;
+  height: 100%;
+}
+footer {
+  width: 100%;
+}
+footer p {
+  padding: 0.1562520;
+  padding: 0.15625rem 0.625rem;
+  text-align: center;
+}
+.pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -20px;
+  z-index: 99;
+}
+/*抽奖活动页面*/
+.act-main {
+  width: 100%;
+  height: 35.5rem;
+  background: url(../images/active.png) center center no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -10;
+}
+.mask {
+  width: 100%;
+  height: 35.5rem;
+  position: absolute;
+  z-index: 10;
+  background: #000;
+  opacity: 0.4;
+}
+.mask-main {
+  width: 13.875rem;
+  height: 9.84375rem;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin-left: -6.9375rem;
+  z-index: 20;
+  background: url(../images/lihuabg.png) center center no-repeat;
+  background-size: cover;
+}
+.mask-main > .red {
+  font-weight: normal;
+  width: 100%;
+  height: 1.09375rem;
+  text-align: center;
+  line-height: 1.09375rem;
+  font-size: 0.9375rem;
+  color: #fd0505;
+  margin: Infinity20 NaN20;
+  margin: 0.31250 00 0.6250;
+  margin: 0.3125rem 0rem 0.625rem 0rem;
+}
+.mask-main > .tip {
+  font-weight: normal;
+  width: 100%;
+  height: 0.375rem;
+  text-align: center;
+  line-height: 0.375rem;
+  font-size: 0.375rem;
+  color: #fd0505;
+}

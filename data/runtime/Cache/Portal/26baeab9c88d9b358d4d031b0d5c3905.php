@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head lang="en">
 	<title>产品列表页</title>
@@ -9,20 +9,20 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	<meta name="keywords" contect="">
 	<meta name="description" contect="">
-	<link rel="stylesheet" href="__TMPL__Public/css/mobile.css" type="text/css">
-	<link rel="stylesheet" href="__TMPL__Public/css/index.css" type="text/css">
-	<link rel="stylesheet" href="__TMPL__Public/css/swiper.min.css" type="text/css">
+	<link rel="stylesheet" href="/themes/simplebootx/Public/css/mobile.css" type="text/css">
+	<link rel="stylesheet" href="/themes/simplebootx/Public/css/index.css" type="text/css">
+	<link rel="stylesheet" href="/themes/simplebootx/Public/css/swiper.min.css" type="text/css">
 </head>
 <body>
 <header>
-	<img src="__TMPL__Public/images/logo.jpg">
+	<img src="/themes/simplebootx/Public/images/logo.jpg">
 </header>
 <!--main-warpper-->
 <section class="main-warpper">
-	<h2 class="detail-title">{$article.post_title}</h2>
+	<h2 class="detail-title"><?php echo ($article["post_title"]); ?></h2>
 	<!--content-->
 	<section class="detail-content">
-		{$article.post_content}
+		<?php echo ($article["post_content"]); ?>
 	</section>
 </section>
 <!--     <footer>
@@ -30,9 +30,9 @@
             <p>企业地址：河南省济源市北海庙后</p>
             <p>豫ICP备12017726号</p>
     </footer> -->
-<script src="__TMPL__Public/js/zepto.js"></script>
-<script src="__TMPL__Public/js/zepto.touch.js"></script>
-<script src="__TMPL__Public/js/swiper.min.js"></script>
+<script src="/themes/simplebootx/Public/js/zepto.js"></script>
+<script src="/themes/simplebootx/Public/js/zepto.touch.js"></script>
+<script src="/themes/simplebootx/Public/js/swiper.min.js"></script>
 <script type="text/javascript">
 	$(function(){
 		var mySwiper2 = new Swiper('#banner',{

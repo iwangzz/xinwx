@@ -1,0 +1,44 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('price/price')}">奖品列表</a></li>
+			<li class="active"><a href="{:U('price/add')}">添加奖品</a></li>
+		</ul>
+		<form class="form-horizontal js-ajax-form" method="post" action="{:U('Price/add_post')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label" for="input-user_nicename">名称</label>
+					<div class="controls">
+						<input type="text" id="input-user_nicename" name="name" value="红包" >
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label" for="input-birthday">单位</label>
+					<div class="controls">
+						<input class="js-date" type="text" id="input-birthday" name="unit" value="元">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="input-user_url">概率</label>
+					<div class="controls">
+						<input type="text" id="input-user_url"name="chance" value="10">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="input-user_url">数额</label>
+					<div class="controls">
+						<input type="text" id="input-user_url" name="account" value="1">
+					</div>
+				</div>
+				<div class="form-actions">
+					<button type="submit" class="btn btn-primary js-ajax-submit">{:L('SAVE')}</button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>
