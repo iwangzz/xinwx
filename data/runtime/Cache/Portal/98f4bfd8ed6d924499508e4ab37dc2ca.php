@@ -54,44 +54,53 @@ var GV = {
 	<div class="wrap js-check-wrap">
 		<ul class="nav nav-tabs">
 			<li><a href="<?php echo U('AdminPost/index');?>"><?php echo L('PORTAL_ADMINPOST_INDEX');?></a></li>
-			<li class="active"><a href="<?php echo U('AdminPost/add',array('term'=>empty($term['term_id'])?'':$term['term_id']));?>" target="_self"><?php echo L('PORTAL_ADMINPOST_ADD');?></a></li>
+			<li><a href="<?php echo U('AdminPost/add',array('term'=>empty($term['term_id'])?'':$term['term_id']));?>" target="_self"><?php echo L('PORTAL_ADMINPOST_ADD');?></a></li>
+			<li class="active"><a href="#"><?php echo L('PORTAL_ADMINPOST_EDIT');?></a></li>
 		</ul>
-		<form action="<?php echo U('AdminPost/add_post');?>" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+		<form action="<?php echo U('AdminPost/edit_post');?>" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
 			<div class="row-fluid">
 				<div class="span9">
 					<table class="table table-bordered">
 						<tr>
 							<th width="80">栏目</th>
 							<td>
-								<select multiple="multiple" style="max-height: 100px;" name="term[]"><?php echo ($taxonomys); ?></select>
+								<select multiple="multiple" style="max-height: 100px;"name="term[]"><?php echo ($taxonomys); ?></select>
 								<div>windows：按住 Ctrl 按钮来选择多个选项,Mac：按住 command 按钮来选择多个选项</div>
 							</td>
 						</tr>
 						<tr>
 							<th>标题</th>
 							<td>
-								<input type="text" style="width:400px;" name="post[post_title]" id="title" required value="" placeholder="请输入标题"/>
+								<input type="hidden" name="post[id]" value="<?php echo ($post["id"]); ?>">
+								<input type="text" style="width: 400px;" name="post[post_title]" required value="<?php echo ($post["post_title"]); ?>" placeholder="请输入标题"/>
 								<span class="form-required">*</span>
 							</td>
 						</tr>
 						<tr>
 							<th>关键词</th>
-							<td><input type="text" name="post[post_keywords]" id="keywords" value="" style="width: 400px" placeholder="请输入关键字"> 多关键词之间用空格或者英文逗号隔开</td>
+							<td>
+								<input type="text" name="post[post_keywords]" style="width: 400px" value="<?php echo ($post['post_keywords']); ?>" placeholder="请输入关键字">
+								多关键词之间用空格或者英文逗号隔开
+							</td>
 						</tr>
+	
 						<tr>
 							<th>文章来源</th>
-							<td><input type="text" name="post[post_source]" id="source" value="" style="width: 400px" placeholder="请输入文章来源"></td>
+							<td>
+								<input type="text" name="post[post_source]" value="<?php echo ($post['post_source']); ?>" style="width: 400px" placeholder="请输入文章来源">
+							</td>
 						</tr>
 						<tr>
 							<th>摘要</th>
 							<td>
-								<textarea name="post[post_excerpt]" id="description" required style="width: 98%; height: 50px;" placeholder="请填写摘要"></textarea>
+								<textarea name="post[post_excerpt]" required style="width: 98%; height: 50px;" placeholder="请填写摘要"><?php echo ($post["post_excerpt"]); ?></textarea>
+								<span class="form-required">*</span>
 							</td>
 						</tr>
 						<tr>
 							<th>内容</th>
 							<td>
-								<script type="text/plain" id="content" name="post[post_content]"></script>
+								<script type="text/plain" id="content" name="post[post_content]"><?php echo ($post["post_content"]); ?></script>
 							</td>
 						</tr>
 						<tr>
@@ -99,7 +108,14 @@ var GV = {
 							<td>
 								<fieldset>
 									<legend>图片列表</legend>
-									<ul id="photos" class="pic-list unstyled"></ul>
+									<ul id="photos" class="pic-list unstyled">
+										<?php if(is_array($smeta['photo'])): foreach($smeta['photo'] as $key=>$vo): ?><li id="savedimage<?php echo ($key); ?>">
+											<input type="text" name="photos_url[]" value="<?php echo sp_get_asset_upload_path($vo['url']);?>" title="双击查看" style="width: 310px;" ondblclick="image_priview(this.value);" class="input image-url-input"> 
+											<input type="text" name="photos_alt[]" value="<?php echo ($vo["alt"]); ?>" style="width: 160px;" class="input image-alt-input" onfocus="if(this.value == this.defaultValue) this.value = ''" onblur="if(this.value.replace(' ','') == '') this.value = this.defaultValue;">
+											<a href="javascript:flashupload('replace_albums_images', '图片替换','savedimage<?php echo ($key); ?>',replace_image,'10,gif|jpg|jpeg|png|bmp,0','','','')">替换</a>
+											<a href="javascript:remove_div('savedimage<?php echo ($key); ?>')">移除</a>
+										</li><?php endforeach; endif; ?>
+									</ul>
 								</fieldset>
 								<a href="javascript:;" onclick="javascript:flashupload('albums_images', '图片上传','photos',change_images,'10,gif|jpg|jpeg|png|bmp,0','','','')" class="btn btn-small">选择图片</a>
 							</td>
@@ -109,44 +125,53 @@ var GV = {
 				<div class="span3">
 					<table class="table table-bordered">
 						<tr>
-							<th><b>缩略图</b></th>
+							<td><b>缩略图</b></td>
 						</tr>
 						<tr>
 							<td>
 								<div style="text-align: center;">
-									<input type="hidden" name="smeta[thumb]" id="thumb" value="">
+									<input type="hidden" name="smeta[thumb]" id="thumb" value="<?php echo ((isset($smeta["thumb"]) && ($smeta["thumb"] !== ""))?($smeta["thumb"]):''); ?>">
 									<a href="javascript:void(0);" onclick="flashupload('thumb_images', '附件上传','thumb',thumb_images,'1,jpg|jpeg|gif|png|bmp,1,,,1','','','');return false;">
-										<img src="/admin/themes/simplebootx/Public/assets/images/default-thumbnail.png" id="thumb_preview" width="135" style="cursor: hand" />
+										<?php if(empty($smeta['thumb'])): ?><img src="/admin/themes/simplebootx/Public/assets/images/default-thumbnail.png" id="thumb_preview" width="135" style="cursor: hand"/>
+										<?php else: ?>
+											<img src="<?php echo sp_get_asset_upload_path($smeta['thumb']);?>" id="thumb_preview" width="135" style="cursor: hand"/><?php endif; ?>
 									</a>
 									<input type="button" class="btn btn-small" onclick="$('#thumb_preview').attr('src','/admin/themes/simplebootx/Public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;" value="取消图片">
 								</div>
 							</td>
 						</tr>
 						<tr>
-							<th><b>发布时间</b></th>
+							<th>发布时间</th>
 						</tr>
 						<tr>
-							<td><input type="text" name="post[post_modified]" value="<?php echo date('Y-m-d H:i:s',time());?>" class="js-datetime" style="width: 160px;"></td>
+							<td><input type="text" name="post[post_modified]" value="<?php echo ($post["post_modified"]); ?>" class="js-datetime" style="width: 160px;"></td>
 						</tr>
 						<tr>
-							<th><b>状态</b></th>
+							<th>评论</th>
+						</tr>
+						<tr>
+							<td><label style="width: 88px"><a href="javascript:open_iframe_dialog('<?php echo U('comment/commentadmin/index',array('post_id'=>$post['id']));?>','评论列表')">查看评论</a></label>
+							</td>
+						</tr>
+						<tr>
+							<th>状态</th>
 						</tr>
 						<tr>
 							<td>
-								<label class="radio"><input type="radio" name="post[post_status]" value="1" checked>审核通过</label>
-								<label class="radio"><input type="radio" name="post[post_status]" value="0">待审核</label>
+								<?php $status_yes=$post['post_status']==1?"checked":""; $status_no=$post['post_status']==0?"checked":""; $istop_yes=$post['istop']==1?"checked":""; $istop_no=$post['istop']==0?"checked":""; $recommended_yes=$post['recommended']==1?"checked":""; $recommended_no=$post['recommended']==0?"checked":""; ?>
+								<label class="radio"><input type="radio" name="post[post_status]" value="1" <?php echo ($status_yes); ?>>审核通过</label>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<label class="radio"><input type="radio" name="post[istop]" value="1">置顶</label>
-								<label class="radio"><input type="radio" name="post[istop]" value="0" checked>未置顶</label>
+								<label class="radio"><input type="radio" name="post[istop]" value="1" <?php echo ($istop_yes); ?>>置顶</label>
+								<label class="radio"><input type="radio" name="post[istop]" value="0" <?php echo ($istop_no); ?>>未置顶</label>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<label class="radio"><input type="radio" name="post[recommended]" value="1">推荐</label>
-								<label class="radio"><input type="radio" name="post[recommended]" value="0" checked>未推荐</label>
+								<label class="radio"><input type="radio" name="post[recommended]" value="1" <?php echo ($recommended_yes); ?>>推荐</label>
+								<label class="radio"><input type="radio" name="post[recommended]" value="0" <?php echo ($recommended_no); ?>>未推荐</label>
 							</td>
 						</tr>
 					</table>
@@ -168,6 +193,7 @@ var GV = {
 	<script type="text/javascript" src="/public/js/ueditor/ueditor.all.min.js"></script>
 	<script type="text/javascript">
 		$(function() {
+			//setInterval(function(){public_lock_renewal();}, 10000);
 			$(".js-ajax-close-btn").on('click', function(e) {
 				e.preventDefault();
 				Wind.use("artDialog", function() {
@@ -204,6 +230,7 @@ var GV = {
 						editorcontent.sync();
 					} catch (err) {
 					}
+					;
 					return editorcontent.hasContents();
 				});
 				var form = $('form.js-ajax-forms');
@@ -216,8 +243,6 @@ var GV = {
 						}
 					});
 				}
-
-				var formloading = false;
 				//表单验证开始
 				form.validate({
 					//是否在获取焦点时验证
@@ -272,16 +297,13 @@ var GV = {
 					onfocusout : false,
 					//验证通过，提交表单
 					submitHandler : function(forms) {
-						if (formloading)
-							return;
 						$(forms).ajaxSubmit({
 							url : form.attr('action'), //按钮上是否自定义提交地址(多按钮情况)
 							dataType : 'json',
 							beforeSubmit : function(arr, $form, options) {
-								formloading = true;
+
 							},
 							success : function(data, statusText, xhr, $form) {
-								formloading = false;
 								if (data.status) {
 									setCookie("refersh_time", 1);
 									//添加成功
@@ -295,9 +317,9 @@ var GV = {
 											opacity : 0,
 											content : data.info,
 											button : [ {
-												name : '继续添加？',
+												name : '继续编辑？',
 												callback : function() {
-													reloadPage(window);
+													//reloadPage(window);
 													return true;
 												},
 												focus : true

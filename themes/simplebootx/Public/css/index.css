@@ -24,6 +24,11 @@ body {
   font-size: 0.4375rem;
   line-height: 0.625rem;
 }
+button {
+  border: 0 none;
+  outline: none;
+  font-family: "Microsoft yahei";
+}
 header {
   width: 100%;
   border-bottom: 3px solid #ff6600;
@@ -109,37 +114,53 @@ footer p {
   background: #000;
   opacity: 0.4;
 }
-.mask-main {
-  width: 13.875rem;
-  height: 9.84375rem;
+/*红包*/
+.red {
+  width: 9.375rem;
+  padding-top: 100%;
   position: absolute;
-  top: 40%;
+  top: 25%;
   left: 50%;
-  margin-left: -6.9375rem;
+  margin-left: -4.6875rem;
   z-index: 20;
-  background: url(../images/lihuabg.png) center center no-repeat;
-  background-size: cover;
 }
-.mask-main > .red {
-  font-weight: normal;
+.red > span {
   width: 100%;
-  height: 1.09375rem;
+  height: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.red > button {
+  position: absolute;
+  top: 38%;
+  left: 26%;
+  font-size: 14px;
+  width: 47%;
+  height: 24%;
+  border-radius: 100%;
+  background: #fdc339;
+  color: #fff;
+}
+.red-jg {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 40%;
   text-align: center;
-  line-height: 1.09375rem;
+  padding: 10px;
+}
+.red-jg > h1 {
+  font-size: 1.25rem;
+  color: #ffc000;
+  line-height: 40px;
+}
+.red-jg > h5 {
   font-size: 0.9375rem;
-  color: #fd0505;
-  margin: Infinity20 NaN20;
-  margin: 0.31250 00 0.6250;
-  margin: 0.3125rem 0rem 0.625rem 0rem;
-}
-.mask-main > .tip {
-  font-weight: normal;
-  width: 100%;
-  height: 0.375rem;
-  text-align: center;
-  line-height: 0.375rem;
-  font-size: 0.375rem;
-  color: #fd0505;
+  color: #fff;
 }
 .error-msg,
 .error-act {
@@ -190,4 +211,26 @@ footer p {
 .item-warpper p img {
   width: 100%;
   height: auto;
+}
+/*暂无活动*/
+.noactive {
+  width: 100%;
+  height: 35.5rem;
+  background: #f0f0f0;
+  padding-top: 6.375rem;
+}
+.noactive .no-top {
+  width: 11.1875rem;
+  height: 12.75rem;
+  margin: 0 auto;
+  background: url(../images/noactivebg.png) center center no-repeat;
+  background-size: cover;
+}
+.noactive .no-msg {
+  width: 100%;
+  margin-top: 3.375rem;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: bold;
+  color: #25c56f;
 }

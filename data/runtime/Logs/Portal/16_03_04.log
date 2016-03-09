@@ -1,0 +1,25 @@
+[ 2016-03-04T12:01:08+08:00 ] 180.175.181.156 /index.php?g=Portal&m=AdminPost&a=index&menuid=7
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-03-04T12:01:13+08:00 ] 180.175.181.156 /index.php?g=&m=AdminPost&a=edit&term=&id=2
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-03-04T12:02:41+08:00 ] 180.175.181.156 /index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002106s ]
+SQL: SHOW COLUMNS FROM `xy_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `xy_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+SQL: SHOW COLUMNS FROM `xy_posts` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xy_terms` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xy_term_relationships` [ RunTime:0.0006s ]
+SQL: DELETE FROM `xy_term_relationships` WHERE `object_id` = 2 AND `term_id` NOT IN ('5') [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_term_relationships` WHERE `object_id` = 2 AND `term_id` = '5' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `xy_term_relationships` SET `status`='1' WHERE `object_id` = 2 AND `term_id` = '5' [ RunTime:0.0004s ]
+SQL: UPDATE `xy_posts` SET `post_title`='580毫升雨瑞维体能量玛咖维生素饮料',`post_keywords`='580毫升雨瑞维体能量玛咖维生素饮料',`post_source`='580毫升雨瑞维体能量玛咖维生素饮料',`post_excerpt`='580毫升雨瑞维体能量玛咖维生素饮料',`post_modified`='2016-03-01 23:17:06',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p><br/></p><p><img src=\"http://ewm.shweb168.com/data/upload/ueditor/20160304/56d908d45cc53.jpg\" title=\"20150311110843_64360.jpg\" alt=\"20150311110843_64360.jpg\"/></p><p><img src=\"http://ewm.shweb168.com/data/upload/ueditor/20160304/56d908decb49e.jpg\" title=\"20150311110903_96684.jpg\" alt=\"20150311110903_96684.jpg\"/></p>',`smeta`='{\"thumb\":\"20160301\\/56d5b2802ea9b.png\"}' WHERE `id` = '2' [ RunTime:0.0006s ]
+
+[ 2016-03-04T12:02:43+08:00 ] 180.175.181.156 /index.php?g=&m=AdminPost&a=index
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+

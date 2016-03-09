@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>抽奖活动页</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="keywords" contect="">
+    <meta name="description" contect="">
+    <link rel="stylesheet" href="__TMPL__Public/css/mobile.css" type="text/css">
+    <link rel="stylesheet" href="__TMPL__Public/css/index.css" type="text/css">
+</head>
+<body>
+<section class="noactive">
+    <h1 class="no-top"></h1>
+    <h1 class="no-msg">Sorry 暂时没有活动！</h1>
+    <b id="wait" style="display:none;">2</b>
+    <a id="href" href="/" target="" style="display:none;">跳转</a>
+</section>
+<script src="__TMPL__Public/js/zepto.js"></script>
+<script src="__TMPL__Public/js/zepto.touch.js"></script>
+<script src="__TMPL__Public/js/swiper.min.js"></script>
+<script type="text/javascript">
+    (function(){
+        var wait = document.getElementById('wait'),href = document.getElementById('href').href;
+        var interval = setInterval(function(){
+            var time = --wait.innerHTML;
+            if(time <= 0) {
+                location.href = href;
+                clearInterval(interval);
+            };
+        }, 1000);
+    })();
+</script>
+</body>
+</html>

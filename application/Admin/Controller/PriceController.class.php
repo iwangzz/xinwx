@@ -41,7 +41,7 @@ class PriceController extends AdminbaseController {
 		$count=$this->url_model->count();
 		$page = $this->page($count, 50);
 		$list = $this->url_model
-		->order("add_time DESC")
+		->order("account DESC")
 		->limit($page->firstRow . ',' . $page->listRows)
 		->select();
 		$this->assign("page", $page->show('Admin'));

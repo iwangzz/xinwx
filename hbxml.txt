@@ -1,0 +1,17 @@
+<xml>
+            <sign>42CF0476FC653887352AAA495D21653A</sign> 
+            <mch_billno>1248581201201603090537398849</mch_billno> 
+            <mch_id>1248581201</mch_id> 
+            <wxappid>wx367f9110a3d96fcb</wxappid> 
+            
+            <send_name><![CDATA[新雨瑞饮品]]></send_name> 
+            <re_openid>o7ly_vlRcUImEoGd3SJE2eCGd4zU</re_openid> 
+            <total_amount>100</total_amount> 
+
+            <total_num>1</total_num> 
+            <wishing><![CDATA[恭喜发财]]></wishing> 
+            <client_ip><![CDATA[121.42.87.18]]></client_ip> 
+            <act_name><![CDATA[发钱活动]]></act_name> 
+            <remark><![CDATA[任性一把]]></remark>             
+            <nonce_str>690272A10D6FF72CB942B007B22AEAAB</nonce_str>
+            </xml>

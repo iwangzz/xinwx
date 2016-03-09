@@ -6,6 +6,7 @@ body {
 	.font-size(14);
 	.line-height(20);
 }
+button {border:0 none;outline:none;font-family: "Microsoft yahei";}
 
 header {
 	width:100%;
@@ -42,9 +43,15 @@ footer{
 /*抽奖活动页面*/
 .act-main {width:100%;.height(1136);background: url(../images/active.png) center center no-repeat; background-size: cover;position: relative;z-index: -10;}
 .mask {width:100%;.height(1136);position: absolute;z-index: 10; background: #000;opacity: 0.4;}
-.mask-main {.width(444);.height(315);position: absolute;top:40%;left:50%;.margin-left(-222);z-index: 20;background: url(../images/lihuabg.png) center center no-repeat; background-size: cover;}
-.mask-main>.red {font-weight:normal;width:100%;.height(35);.tc();.line-height(35);.font-size(30);color:#fd0505;.margin(10,0,20,0);}
-.mask-main>.tip {font-weight:normal;width:100%;.height(12);.tc();.line-height(12);.font-size(12);color:#fd0505;}
+.mask-main {}
+/*红包*/
+.red{.width(300);padding-top: 100%;position: absolute;top:25%;left:50%;.margin-left(-150);z-index: 20;}
+.red>span{width: 100%; height: 100%; background-size: 100%; background-position: center; background-repeat: no-repeat; top: 0; left: 0; position: absolute;}
+.red>button{position: absolute; top: 38%; left: 26%; font-size: 14px; width: 47%; height: 24%; border-radius: 100%; background: #fdc339; color: #fff;}
+.red-jg{display: none; position:absolute;width:100%; top: 40%; text-align: center; padding: 10px;}
+.red-jg>h1{.font-size(40); color: #ffc000; line-height: 40px;}
+.red-jg>h5{.font-size(30);color: #fff;}
+
 .error-msg,.error-act {
   .width(400);.height(200);position: absolute;top:40%;left:50%;.margin-left(-200);z-index: 20;background:#fff;opacity: 0.85;border-radius:10px;
 }
@@ -67,6 +74,27 @@ footer{
   p img {
 	width:100%;
 	height:auto;
+  }
+}
+
+/*暂无活动*/
+.noactive{
+  width:100%;.height(1136); background:#f0f0f0;
+  .padding-top(204);
+  .no-top {
+	.width(358);
+	.height(408);
+	margin:0 auto;
+	background: url(../images/noactivebg.png) center center no-repeat;
+	background-size:cover;
+  }
+  .no-msg  {
+	width:100%;
+	.margin-top(108);
+	.tc();
+	.font-size(30);
+	font-weight:bold;
+	color:#25c56f;
   }
 }
 

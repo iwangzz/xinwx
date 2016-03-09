@@ -10,6 +10,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
     <meta name="keywords" contect="">
     <meta name="description" contect="">
+    <link rel="stylesheet" href="/themes/simplebootx/Public/css/csshake.min.css">
     <link rel="stylesheet" href="/themes/simplebootx/Public/css/mobile.css" type="text/css">
     <link rel="stylesheet" href="/themes/simplebootx/Public/css/index.css" type="text/css">
 </head>
@@ -17,26 +18,36 @@
 <section class="act-main">
     <!--mask-->
     <div class="mask"></div>
-    <!--<?php if($account == '0.00'): ?>-->
-        <!--<div class="error-msg">-->
-            <!--<h1>亲、没有中奖哦</h1>-->
-            <!--<h1 class="emsg">一定是打开的方式不对!</h1>-->
-        <!--</div>-->
-        <!--<?php else: ?>-->
-        <!--<div class="mask-main">-->
-            <!--<h2 class="red">恭喜您中的<span><?php echo ($account); ?></span>元</h2>-->
-            <!--<h3 class="tip">已存至账户</h3>-->
-        <!--</div>-->
-    <!--<?php endif; ?>-->
-    <div class="error-act">
-        <h1>Sorry,没有此活动哦</h1>
-    </div>
+    <?php if($account != '该二维码已被使用'): ?><div class="red shake-chunk "><!-- shake-chunk -->
+            <span style="background-image: url(/themes/simplebootx/Public/images/red-w.png);"></span>
+            <button class="redbutton" type="领取红包">拆红包</button>
+            <div class="red-jg">
+                <h1>恭喜您</h1>
+                <h5>成功中的<span><?php echo ($account); ?></span>元</h5>
+                <h5>请进入公众号领取</h5>
+            </div>
+        </div>
+        <?php else: ?>
+        <!--error-->
+        <div class="error-msg">
+            <h1>好可惜哦！</h1>
+            <h1>该二维码已使用啦</h1>
+        </div><?php endif; ?>
 </section>
 <script src="/themes/simplebootx/Public/js/zepto.js"></script>
 <script src="/themes/simplebootx/Public/js/zepto.touch.js"></script>
 <script src="/themes/simplebootx/Public/js/swiper.min.js"></script>
 <script type="text/javascript">
-
+    setTimeout(function () {
+        // 在带有red样式的div中删除shake-chunk样式
+        $('.red').removeClass('shake-chunk');
+        // 将redbutton按钮隐藏
+        $('.redbutton').css("display", "none");
+        // 修改red 下 span   背景图
+        $('.red > span').css("background-image", "url(/themes/simplebootx/Public/images/red-y.png)");
+        // 修改red-jg的css显示方式为块
+        $('.red-jg').css("display", "block");
+    }, 2000);
 </script>
 </body>
 </html>

@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : localhost_3306
-Source Server Version : 50505
-Source Host           : localhost:3306
-Source Database       : xinyu
+Source Server         : qdm109009657.my3w.com
+Source Server Version : 50148
+Source Host           : qdm109009657.my3w.com:3306
+Source Database       : qdm109009657_db
 
 Target Server Type    : MYSQL
-Target Server Version : 50505
+Target Server Version : 50148
 File Encoding         : 65001
 
-Date: 2016-03-03 19:36:58
+Date: 2016-03-09 14:44:41
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -689,7 +689,7 @@ CREATE TABLE `xy_posts` (
 -- ----------------------------
 -- Records of xy_posts
 -- ----------------------------
-INSERT INTO `xy_posts` VALUES ('2', '1', '580毫升雨瑞维体能量玛咖维生素饮料', '580毫升雨瑞维体能量玛咖维生素饮料', '2016-03-01 23:17:32', '<p><img src=\"http://xinyu.com/data/upload/ueditor/20160303/56d7bbcf628d2.jpg\" title=\"20150311110843_64360.jpg\" alt=\"20150311110843_64360.jpg\"/></p><p><img src=\"http://xinyu.com/data/upload/ueditor/20160303/56d7bbd5e02ad.jpg\" title=\"20150311110903_96684.jpg\" alt=\"20150311110903_96684.jpg\"/></p>', '580毫升雨瑞维体能量玛咖维生素饮料', '580毫升雨瑞维体能量玛咖维生素饮料', '1', '1', '2016-03-01 23:17:06', null, '0', null, '', '0', '{\"thumb\":\"20160301\\/56d5b2802ea9b.png\"}', '0', '0', '0', '0');
+INSERT INTO `xy_posts` VALUES ('2', '1', '580毫升雨瑞维体能量玛咖维生素饮料', '580毫升雨瑞维体能量玛咖维生素饮料', '2016-03-01 23:17:32', '<p><br/></p><p><img src=\"http://ewm.shweb168.com/data/upload/ueditor/20160304/56d908d45cc53.jpg\" title=\"20150311110843_64360.jpg\" alt=\"20150311110843_64360.jpg\"/></p><p><img src=\"http://ewm.shweb168.com/data/upload/ueditor/20160304/56d908decb49e.jpg\" title=\"20150311110903_96684.jpg\" alt=\"20150311110903_96684.jpg\"/></p>', '580毫升雨瑞维体能量玛咖维生素饮料', '580毫升雨瑞维体能量玛咖维生素饮料', '1', '1', '2016-03-01 23:17:06', null, '0', null, '', '0', '{\"thumb\":\"20160301\\/56d5b2802ea9b.png\"}', '0', '0', '0', '0');
 INSERT INTO `xy_posts` VALUES ('3', '1', '关于我们', '关于我们', '2016-03-03 15:03:17', '<p><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑, 黑体; font-size: 14px; line-height: 22px; background-color: rgb(255, 255, 255);\">&nbsp; &nbsp; &nbsp; 河南新雨瑞饮品有限公司济源市北海创业园区，这里北依太行山，与山西省晋城市毗邻；南临黄河，与古都洛阳市隔河相望；西距王屋，与山西省运城市接壤；东临华北平原，与焦作市相连，自古有“豫西北门户”之称，交通便利，环境宜人。&nbsp;</span></p><p><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑, 黑体; font-size: 14px; line-height: 22px; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑, 黑体; font-size: 14px; line-height: 22px; background-color: rgb(255, 255, 255);\">&nbsp; &nbsp; &nbsp; 公司是生产碳酸饮料、乳酸菌饮料、果汁饮料、功能饮料的现代化公司。目前拥有总资产6000万元，占地面积3万多平方米，建筑面积10000多平方米，员工300余人，高级科技人员20人，拥有价值3000万元的大型各类碳酸饮料、奶饮料、功能饮料、果汁饮料生产线6条和全自动包装设备。</span></span></p><p><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑, 黑体; font-size: 14px; line-height: 22px; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑, 黑体; font-size: 14px; line-height: 22px; background-color: rgb(255, 255, 255);\">&nbsp; &nbsp; &nbsp; 公司围绕“高起点、高层次、突破性、竞争力”为基点，导入ISO9001:2000质量管理体系要求，坚持以八项质量管理原则为基础的科学管理方法，坚持以人为本，诚信经营。 依托得天独厚的自然资源，应用先进的科学技术和工艺方法， 精益求精，从根本上保证产品的质量安全；通过质量管理体系的有效运行并持续改进，为消费者提供高品质产品和优质服务，竭尽全力满足合同要求和顾客期望，努力打造“新雨瑞”饮料品牌。&nbsp;</span></span></p><p><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑, 黑体; font-size: 14px; line-height: 22px; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑, 黑体; font-size: 14px; line-height: 22px; background-color: rgb(255, 255, 255);\">&nbsp; &nbsp; &nbsp; 顾客的满意就是我们的愿望，为顾客创造价值是我们不懈的追求。我们的产品承诺是：“生产真正有使用价值的产品 &nbsp;做大众化品牌 &nbsp;代表健康、和谐的形象.” 我们致力于塑造健康饮食新观念，竭诚为新世纪的美好生活锦上添花，营造时尚。 我们力求领先，只有领先让我们超越；我们强调品质， 只有品质让我们杰出；我们珍惜信誉，只有信誉让我们长久。</span></span></p><p><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑, 黑体; font-size: 14px; line-height: 22px; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑, 黑体; font-size: 14px; line-height: 22px; background-color: rgb(255, 255, 255);\">&nbsp; &nbsp; &nbsp; 以人为本，不断开拓进取，严格的工作管理，优惠的价格及完善的服务是本公司一贯的经营宗旨。竭诚欢迎新老客户，愿与您忠诚合作，共创辉煌！</span></span></p>', '关于我们', '关于我们', '1', '1', '2016-03-03 15:01:41', null, '0', null, '', '0', '{\"thumb\":\"20160303\\/56d7e1978642d.png\"}', '0', '0', '0', '0');
 
 -- ----------------------------
@@ -813,6 +813,26 @@ CREATE TABLE `xy_slide_cat` (
 -- ----------------------------
 
 -- ----------------------------
+-- Table structure for xy_term_relationships
+-- ----------------------------
+DROP TABLE IF EXISTS `xy_term_relationships`;
+CREATE TABLE `xy_term_relationships` (
+  `tid` bigint(20) NOT NULL AUTO_INCREMENT,
+  `object_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'posts表里文章id',
+  `term_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '分类id',
+  `listorder` int(10) NOT NULL DEFAULT '0' COMMENT '排序',
+  `status` int(2) NOT NULL DEFAULT '1' COMMENT '状态，1发布，0不发布',
+  PRIMARY KEY (`tid`),
+  KEY `term_taxonomy_id` (`term_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='Portal 文章分类对应表';
+
+-- ----------------------------
+-- Records of xy_term_relationships
+-- ----------------------------
+INSERT INTO `xy_term_relationships` VALUES ('2', '2', '5', '0', '1');
+INSERT INTO `xy_term_relationships` VALUES ('3', '3', '13', '0', '1');
+
+-- ----------------------------
 -- Table structure for xy_terms
 -- ----------------------------
 DROP TABLE IF EXISTS `xy_terms`;
@@ -850,24 +870,20 @@ INSERT INTO `xy_terms` VALUES ('12', '雨瑞苏打水', '', 'article', '雨瑞�
 INSERT INTO `xy_terms` VALUES ('13', '关于我们', '', 'article', '关于我们', '0', '0', '0-13', '', '', '', '{\"thumb\":\"\"}', 'list', 'article', '0', '1');
 
 -- ----------------------------
--- Table structure for xy_term_relationships
+-- Table structure for xy_token
 -- ----------------------------
-DROP TABLE IF EXISTS `xy_term_relationships`;
-CREATE TABLE `xy_term_relationships` (
-  `tid` bigint(20) NOT NULL AUTO_INCREMENT,
-  `object_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'posts表里文章id',
-  `term_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '分类id',
-  `listorder` int(10) NOT NULL DEFAULT '0' COMMENT '排序',
-  `status` int(2) NOT NULL DEFAULT '1' COMMENT '状态，1发布，0不发布',
-  PRIMARY KEY (`tid`),
-  KEY `term_taxonomy_id` (`term_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='Portal 文章分类对应表';
+DROP TABLE IF EXISTS `xy_token`;
+CREATE TABLE `xy_token` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `token` varchar(255) NOT NULL,
+  `add_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of xy_term_relationships
+-- Records of xy_token
 -- ----------------------------
-INSERT INTO `xy_term_relationships` VALUES ('2', '2', '5', '0', '1');
-INSERT INTO `xy_term_relationships` VALUES ('3', '3', '13', '0', '1');
+INSERT INTO `xy_token` VALUES ('1', 'MQ4hplK6v166nh1DL698iSAcdoZHVQpG5LASE_trMLDR-ANURnlestA8TOCLkOXEyOUYOK77StlqheSgaRBhWwavniBpv9pingQPCH3w_4HitS3yeCx50-XNsCwN-DmxRUTbAJAZCB', '2016-03-09 10:08:14');
 
 -- ----------------------------
 -- Table structure for xy_url
@@ -1756,7 +1772,7 @@ INSERT INTO `xy_url` VALUES ('867', '47e493f1317cd9a34519fec81d1448f8', '未使�
 INSERT INTO `xy_url` VALUES ('868', 'ae766832056026c235868e5277693110', '未使用', '2016-03-03 11:20:09', '0000-00-00 00:00:00', '0.00');
 INSERT INTO `xy_url` VALUES ('869', 'e61396355dfc06e2c696b11ecc84f91e', '未使用', '2016-03-03 11:20:09', '0000-00-00 00:00:00', '0.00');
 INSERT INTO `xy_url` VALUES ('870', 'd95ce868c8e772356c1b70d22bd615e6', '已使用', '2016-03-03 11:20:09', '2016-03-03 11:51:47', '0.00');
-INSERT INTO `xy_url` VALUES ('871', '9196fbc8210e03f77312bcf111ed8731', '未使用', '2016-03-03 11:20:09', '0000-00-00 00:00:00', '0.00');
+INSERT INTO `xy_url` VALUES ('871', '9196fbc8210e03f77312bcf111ed8731', '已使用', '2016-03-03 11:20:09', '2016-03-03 11:53:34', '0.00');
 INSERT INTO `xy_url` VALUES ('872', 'eb6cc2faf5e8acc218e6ceac7a2211e0', '未使用', '2016-03-03 11:20:09', '0000-00-00 00:00:00', '0.00');
 INSERT INTO `xy_url` VALUES ('873', 'c413672e5007f9e1de294e0696e8b7de', '未使用', '2016-03-03 11:20:09', '0000-00-00 00:00:00', '0.00');
 INSERT INTO `xy_url` VALUES ('874', '1f36df38b975446cb6c0ef3934136bab', '未使用', '2016-03-03 11:20:09', '0000-00-00 00:00:00', '0.00');
@@ -1886,10 +1902,10 @@ INSERT INTO `xy_url` VALUES ('997', '011ef4bd7d5a98c6320192cc2e37657c', '未使�
 INSERT INTO `xy_url` VALUES ('998', '952492d38999d5d580fc1f2236019d6f', '未使用', '2016-03-03 11:20:10', '0000-00-00 00:00:00', '0.00');
 INSERT INTO `xy_url` VALUES ('999', '4bc4b5663025cc21f2447183c83c1782', '未使用', '2016-03-03 11:20:10', '0000-00-00 00:00:00', '0.00');
 INSERT INTO `xy_url` VALUES ('1000', '0b824490f1fbab907463418a3e0efabb', '未使用', '2016-03-03 11:20:10', '0000-00-00 00:00:00', '0.00');
-INSERT INTO `xy_url` VALUES ('1001', 'ec81560011ec28b8ba8117fa83590f05', '未使用', '2016-03-03 11:20:10', '0000-00-00 00:00:00', '0.00');
+INSERT INTO `xy_url` VALUES ('1001', 'ec81560011ec28b8ba8117fa83590f05', '已使用', '2016-03-03 11:20:10', '2016-03-03 13:37:01', '0.00');
 INSERT INTO `xy_url` VALUES ('1002', 'f6b53ae5f21090b07dfb5c2049e2af1d', '未使用', '2016-03-03 11:20:10', '0000-00-00 00:00:00', '0.00');
-INSERT INTO `xy_url` VALUES ('1003', '0458b90749c02750b50e00eb8764787c', '未使用', '2016-03-03 11:20:10', '0000-00-00 00:00:00', '0.00');
-INSERT INTO `xy_url` VALUES ('1004', 'ff92bd11b0cad1374557ab497ac0a043', '未使用', '2016-03-03 11:20:10', '0000-00-00 00:00:00', '0.00');
+INSERT INTO `xy_url` VALUES ('1003', '0458b90749c02750b50e00eb8764787c', '已使用', '2016-03-03 11:20:10', '2016-03-03 12:12:08', '0.00');
+INSERT INTO `xy_url` VALUES ('1004', 'ff92bd11b0cad1374557ab497ac0a043', '已使用', '2016-03-03 11:20:10', '2016-03-03 14:53:42', '0.00');
 INSERT INTO `xy_url` VALUES ('1005', 'd37039e3228418368b3980d3bd4819ab', '未使用', '2016-03-03 11:20:10', '0000-00-00 00:00:00', '0.00');
 INSERT INTO `xy_url` VALUES ('1006', 'd9d2cb3e326cd6e21f9fa587ff131bd5', '未使用', '2016-03-03 11:20:10', '0000-00-00 00:00:00', '0.00');
 INSERT INTO `xy_url` VALUES ('1007', '2e54c8b65ebd592e2b726ef8b79fcf52', '未使用', '2016-03-03 11:20:10', '0000-00-00 00:00:00', '0.00');
@@ -2859,11 +2875,11 @@ INSERT INTO `xy_url` VALUES ('1970', 'beda808353f613f89b7e7f91f473f1de', '未使
 INSERT INTO `xy_url` VALUES ('1971', '32e88d6bb5fe3eda1b3c2d561f19e3b4', '未使用', '2016-03-03 11:20:15', '0000-00-00 00:00:00', '0.50');
 INSERT INTO `xy_url` VALUES ('1972', 'f90d36aa70ed60b3173376f6bbba5305', '未使用', '2016-03-03 11:20:15', '0000-00-00 00:00:00', '0.50');
 INSERT INTO `xy_url` VALUES ('1973', '5f3ae99508820e38f215e42feec1243f', '已使用', '2016-03-03 11:20:16', '2016-03-03 11:28:59', '0.50');
-INSERT INTO `xy_url` VALUES ('1974', 'a734cd8bd526690df864149c489e52f3', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '0.50');
-INSERT INTO `xy_url` VALUES ('1975', '49db07699ea073542cc3052f6fdd02d7', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '0.50');
-INSERT INTO `xy_url` VALUES ('1976', 'd1e0a762b10391c42c98312a9c0ab5a9', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '0.50');
-INSERT INTO `xy_url` VALUES ('1977', '17eeea823b8b36e27781454964bf06f7', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '0.50');
-INSERT INTO `xy_url` VALUES ('1978', 'c1351a222824d2d398b6da6a6a6bff5a', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '0.50');
+INSERT INTO `xy_url` VALUES ('1974', 'a734cd8bd526690df864149c489e52f3', '已使用', '2016-03-03 11:20:16', '2016-03-03 12:00:22', '0.50');
+INSERT INTO `xy_url` VALUES ('1975', '49db07699ea073542cc3052f6fdd02d7', '已使用', '2016-03-03 11:20:16', '2016-03-03 14:55:04', '0.50');
+INSERT INTO `xy_url` VALUES ('1976', 'd1e0a762b10391c42c98312a9c0ab5a9', '已使用', '2016-03-03 11:20:16', '2016-03-03 13:37:32', '0.50');
+INSERT INTO `xy_url` VALUES ('1977', '17eeea823b8b36e27781454964bf06f7', '已使用', '2016-03-03 11:20:16', '2016-03-03 13:42:33', '0.50');
+INSERT INTO `xy_url` VALUES ('1978', 'c1351a222824d2d398b6da6a6a6bff5a', '已使用', '2016-03-03 11:20:16', '2016-03-03 14:53:26', '0.50');
 INSERT INTO `xy_url` VALUES ('1979', 'feb0e83e18ce2dc4725d40b3568768f6', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '0.50');
 INSERT INTO `xy_url` VALUES ('1980', '483603d37a92b2e72e3eafd6323af14b', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '0.50');
 INSERT INTO `xy_url` VALUES ('1981', '4613bbf33a8919426b1226d596a979d2', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '0.50');
@@ -2879,7 +2895,7 @@ INSERT INTO `xy_url` VALUES ('1990', '1dc845a6bf5d857f05f0cd4947bbccbf', '未使
 INSERT INTO `xy_url` VALUES ('1991', '11dd1f980475a4dc1735aec89c6f4810', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '0.50');
 INSERT INTO `xy_url` VALUES ('1992', '690c1c571a0e73e0f8eb592deb2ccb4d', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '0.50');
 INSERT INTO `xy_url` VALUES ('1993', 'c6f2ab0040d105266b84071678bf23a4', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '0.50');
-INSERT INTO `xy_url` VALUES ('1994', 'c403a4d17921548d44fbc97e1d127bec', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '0.50');
+INSERT INTO `xy_url` VALUES ('1994', 'c403a4d17921548d44fbc97e1d127bec', '已使用', '2016-03-03 11:20:16', '2016-03-03 13:41:24', '0.50');
 INSERT INTO `xy_url` VALUES ('1995', 'da8e8cc39b469dc66f1a49cb0a3d405a', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '0.50');
 INSERT INTO `xy_url` VALUES ('1996', 'c1d0bf4bd84c877a12fd33b3029e6cc9', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '0.50');
 INSERT INTO `xy_url` VALUES ('1997', '359de4d792d63a7738f548ec418e2f0c', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '0.50');
@@ -2887,10 +2903,10 @@ INSERT INTO `xy_url` VALUES ('1998', '4812c8096a06a1609b79363a1d6c6fb3', '未使
 INSERT INTO `xy_url` VALUES ('1999', 'a99f6bd048af3db7f1ff1744a7a89f9a', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '0.50');
 INSERT INTO `xy_url` VALUES ('2000', 'c1b6f8d316a7041b8822c06fa5961fc8', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '0.50');
 INSERT INTO `xy_url` VALUES ('2001', 'ecbfb07a3d6c1c6167dc97aaed8b74a7', '已使用', '2016-03-03 11:20:16', '2016-03-03 11:24:39', '1.00');
-INSERT INTO `xy_url` VALUES ('2002', '3d22cc9bb0bc008558715303b7af3ae5', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
+INSERT INTO `xy_url` VALUES ('2002', '3d22cc9bb0bc008558715303b7af3ae5', '已使用', '2016-03-03 11:20:16', '2016-03-09 10:12:44', '1.00');
 INSERT INTO `xy_url` VALUES ('2003', '2d9a5910453cb78fe11c01c086be2073', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
-INSERT INTO `xy_url` VALUES ('2004', '063c0bcf29d23c865961611b4611305f', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
-INSERT INTO `xy_url` VALUES ('2005', '71e5f5b2004c9f26258eebc2301c5edf', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
+INSERT INTO `xy_url` VALUES ('2004', '063c0bcf29d23c865961611b4611305f', '已使用', '2016-03-03 11:20:16', '2016-03-03 15:30:34', '1.00');
+INSERT INTO `xy_url` VALUES ('2005', '71e5f5b2004c9f26258eebc2301c5edf', '已使用', '2016-03-03 11:20:16', '2016-03-03 14:43:21', '1.00');
 INSERT INTO `xy_url` VALUES ('2006', '3b0fcccc65592b60332b87b5d14b46aa', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
 INSERT INTO `xy_url` VALUES ('2007', '343275258fdce6a5ea2a7374fb3c37b7', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
 INSERT INTO `xy_url` VALUES ('2008', '97839fa7b5c61f5b1d38bb4425ca3190', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
@@ -2904,19 +2920,19 @@ INSERT INTO `xy_url` VALUES ('2015', 'ce358cfa105af896debc667aeccd727f', '未使
 INSERT INTO `xy_url` VALUES ('2016', '25196d2d576e8e0f0a0a2684181d7f0b', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
 INSERT INTO `xy_url` VALUES ('2017', 'ff8f4be28afddae4c35d2bd050e21b96', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
 INSERT INTO `xy_url` VALUES ('2018', '67e64a85793b6e29a54514f24d367fcf', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
-INSERT INTO `xy_url` VALUES ('2019', '9e4f0fc2e001a27569ae85dcee802bac', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
+INSERT INTO `xy_url` VALUES ('2019', '9e4f0fc2e001a27569ae85dcee802bac', '已使用', '2016-03-03 11:20:16', '2016-03-03 15:32:09', '1.00');
 INSERT INTO `xy_url` VALUES ('2020', '62563747051ee49b66318c129ee5cd1f', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
-INSERT INTO `xy_url` VALUES ('2021', '2b63022992e3308285e585a254699571', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
-INSERT INTO `xy_url` VALUES ('2022', 'fef508ac78ed039e7bc7cc8df9f0b64e', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
+INSERT INTO `xy_url` VALUES ('2021', '2b63022992e3308285e585a254699571', '已使用', '2016-03-03 11:20:16', '2016-03-09 00:38:39', '1.00');
+INSERT INTO `xy_url` VALUES ('2022', 'fef508ac78ed039e7bc7cc8df9f0b64e', '已使用', '2016-03-03 11:20:16', '2016-03-09 00:37:28', '1.00');
 INSERT INTO `xy_url` VALUES ('2023', '505d7288850d802c356d2a43e4ea9c5c', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
 INSERT INTO `xy_url` VALUES ('2024', 'c4a38831d1a10f4238920b79ef5ba7a0', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
 INSERT INTO `xy_url` VALUES ('2025', 'b60012f07e9e9a26baf9f6b239056ba2', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
-INSERT INTO `xy_url` VALUES ('2026', 'c52d6a847b8ca227758aeced2cc19f78', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
-INSERT INTO `xy_url` VALUES ('2027', '2d73c01bf09cd95dc265c8b94ed68558', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
-INSERT INTO `xy_url` VALUES ('2028', 'd2eadb635c1fd58a46f1ad23030e3852', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
-INSERT INTO `xy_url` VALUES ('2029', '0a4d700db3f7d611a98f0aa79cda3b87', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
-INSERT INTO `xy_url` VALUES ('2030', 'bcb938cfb38dec1161c95f016e766c5b', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
-INSERT INTO `xy_url` VALUES ('2031', '03e306bab570e9fc0b6183a4294a6ea5', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
+INSERT INTO `xy_url` VALUES ('2026', 'c52d6a847b8ca227758aeced2cc19f78', '已使用', '2016-03-03 11:20:16', '2016-03-08 22:30:21', '1.00');
+INSERT INTO `xy_url` VALUES ('2027', '2d73c01bf09cd95dc265c8b94ed68558', '已使用', '2016-03-03 11:20:16', '2016-03-03 15:40:08', '1.00');
+INSERT INTO `xy_url` VALUES ('2028', 'd2eadb635c1fd58a46f1ad23030e3852', '已使用', '2016-03-03 11:20:16', '2016-03-03 15:38:23', '1.00');
+INSERT INTO `xy_url` VALUES ('2029', '0a4d700db3f7d611a98f0aa79cda3b87', '已使用', '2016-03-03 11:20:16', '2016-03-03 15:37:47', '1.00');
+INSERT INTO `xy_url` VALUES ('2030', 'bcb938cfb38dec1161c95f016e766c5b', '已使用', '2016-03-03 11:20:16', '2016-03-03 15:37:16', '1.00');
+INSERT INTO `xy_url` VALUES ('2031', '03e306bab570e9fc0b6183a4294a6ea5', '已使用', '2016-03-03 11:20:16', '2016-03-03 15:35:46', '1.00');
 INSERT INTO `xy_url` VALUES ('2032', '2f0f3c4ee11e25506904c7967095eec1', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
 INSERT INTO `xy_url` VALUES ('2033', 'f851d4ac93a146c868e1d067858107f9', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
 INSERT INTO `xy_url` VALUES ('2034', 'c89ae4edd18b4338e7c3a7f4aebed56b', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
@@ -3086,25 +3102,63 @@ INSERT INTO `xy_url` VALUES ('2197', 'ec6455aedffb0a60eff4c1ea068a948b', '未使
 INSERT INTO `xy_url` VALUES ('2198', '06d1498801aafc7a09c76c68d4321077', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
 INSERT INTO `xy_url` VALUES ('2199', '4f580badf24835e9bb531d8f03425000', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
 INSERT INTO `xy_url` VALUES ('2200', '29443635a952b5c18c53b93c3e19241b', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '1.00');
-INSERT INTO `xy_url` VALUES ('2201', '4b125a4ae371c3cb43e10b933cb9fd86', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '100.00');
-INSERT INTO `xy_url` VALUES ('2202', '513fc3c78762063ed73288a1f6d2da81', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '100.00');
-INSERT INTO `xy_url` VALUES ('2203', 'c3a77b7fbce265e95eb8f4508f03f65b', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '100.00');
+INSERT INTO `xy_url` VALUES ('2201', '4b125a4ae371c3cb43e10b933cb9fd86', '已使用', '2016-03-03 11:20:16', '2016-03-04 13:12:00', '100.00');
+INSERT INTO `xy_url` VALUES ('2202', '513fc3c78762063ed73288a1f6d2da81', '已使用', '2016-03-03 11:20:16', '2016-03-03 13:37:17', '100.00');
+INSERT INTO `xy_url` VALUES ('2203', 'c3a77b7fbce265e95eb8f4508f03f65b', '已使用', '2016-03-03 11:20:16', '2016-03-04 14:38:28', '100.00');
 INSERT INTO `xy_url` VALUES ('2204', '35ffe6c979ed65be916f7b3fe589c56c', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '100.00');
 INSERT INTO `xy_url` VALUES ('2205', '7fc836fdfc51e1094ddee79b0e629e7f', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '10.00');
 INSERT INTO `xy_url` VALUES ('2206', 'df4a6570ab2be1e428e37b98ab330e75', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '10.00');
 INSERT INTO `xy_url` VALUES ('2207', '923321120203a037f04fa13ae98247c7', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '10.00');
 INSERT INTO `xy_url` VALUES ('2208', 'f24943a500bed10ce94a18930939d5da', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '10.00');
-INSERT INTO `xy_url` VALUES ('2209', '28d67e2c53f137de64212bab473c3e21', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '10.00');
+INSERT INTO `xy_url` VALUES ('2209', '28d67e2c53f137de64212bab473c3e21', '已使用', '2016-03-03 11:20:16', '2016-03-03 22:04:45', '10.00');
 INSERT INTO `xy_url` VALUES ('2210', '4c4c2549bb0f20cde4b50a433ba36b6e', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '5.00');
 INSERT INTO `xy_url` VALUES ('2211', '1ba3719a2d4b164d6639a55b2de0005d', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '5.00');
-INSERT INTO `xy_url` VALUES ('2212', 'b40fe340cef46c543bbe33636f40d668', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '5.00');
+INSERT INTO `xy_url` VALUES ('2212', 'b40fe340cef46c543bbe33636f40d668', '已使用', '2016-03-03 11:20:16', '2016-03-05 00:29:37', '5.00');
 INSERT INTO `xy_url` VALUES ('2213', 'b67c345be2529fbb45dd401293f679c2', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '5.00');
-INSERT INTO `xy_url` VALUES ('2214', '24e4530a7a12d27d75ee63404a1fde86', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '5.00');
+INSERT INTO `xy_url` VALUES ('2214', '24e4530a7a12d27d75ee63404a1fde86', '已使用', '2016-03-03 11:20:16', '2016-03-03 15:30:18', '5.00');
 INSERT INTO `xy_url` VALUES ('2215', 'ce5c1bc384b515bb3cfe47fc2063a436', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '5.00');
-INSERT INTO `xy_url` VALUES ('2216', 'd62b8e8a396243d521ea04f2c91f4921', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '5.00');
+INSERT INTO `xy_url` VALUES ('2216', 'd62b8e8a396243d521ea04f2c91f4921', '已使用', '2016-03-03 11:20:16', '2016-03-05 21:30:21', '5.00');
 INSERT INTO `xy_url` VALUES ('2217', '254ba69ba64df54b55258cd7d5d6bc16', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '5.00');
 INSERT INTO `xy_url` VALUES ('2218', '4987996107ad138562f1d55728f20232', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '5.00');
-INSERT INTO `xy_url` VALUES ('2219', '345bcf5081c6a39fd58af0607a084bf4', '未使用', '2016-03-03 11:20:16', '0000-00-00 00:00:00', '5.00');
+INSERT INTO `xy_url` VALUES ('2219', '345bcf5081c6a39fd58af0607a084bf4', '已使用', '2016-03-03 11:20:16', '2016-03-04 13:13:07', '5.00');
+
+-- ----------------------------
+-- Table structure for xy_user_favorites
+-- ----------------------------
+DROP TABLE IF EXISTS `xy_user_favorites`;
+CREATE TABLE `xy_user_favorites` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `uid` bigint(20) DEFAULT NULL COMMENT '用户 id',
+  `title` varchar(255) DEFAULT NULL COMMENT '收藏内容的标题',
+  `url` varchar(255) DEFAULT NULL COMMENT '收藏内容的原文地址，不带域名',
+  `description` varchar(500) DEFAULT NULL COMMENT '收藏内容的描述',
+  `table` varchar(50) DEFAULT NULL COMMENT '收藏实体以前所在表，不带前缀',
+  `object_id` int(11) DEFAULT NULL COMMENT '收藏内容原来的主键id',
+  `createtime` int(11) DEFAULT NULL COMMENT '收藏时间',
+  PRIMARY KEY (`id`),
+  KEY `uid` (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='用户收藏表';
+
+-- ----------------------------
+-- Records of xy_user_favorites
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for xy_user_sign
+-- ----------------------------
+DROP TABLE IF EXISTS `xy_user_sign`;
+CREATE TABLE `xy_user_sign` (
+  `id` int(11) NOT NULL,
+  `user` varchar(30) CHARACTER SET utf8 NOT NULL COMMENT 'openid',
+  `name` varchar(30) CHARACTER SET utf8 NOT NULL COMMENT '用户昵称',
+  `last_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '最后签到时间',
+  `constant_num` decimal(10,0) DEFAULT NULL COMMENT '连续签到次数',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+-- ----------------------------
+-- Records of xy_user_sign
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for xy_users
@@ -3138,25 +3192,4 @@ CREATE TABLE `xy_users` (
 -- ----------------------------
 -- Records of xy_users
 -- ----------------------------
-INSERT INTO `xy_users` VALUES ('1', 'admin', '###74bf77b9cff885839a35ce3a641ad911', 'admin', 'phprince@163.com', '', null, '0', null, null, '127.0.0.1', '2016-03-03 12:17:35', '2016-03-02 02:11:19', '', '1', '0', '1', '0', '');
-
--- ----------------------------
--- Table structure for xy_user_favorites
--- ----------------------------
-DROP TABLE IF EXISTS `xy_user_favorites`;
-CREATE TABLE `xy_user_favorites` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `uid` bigint(20) DEFAULT NULL COMMENT '用户 id',
-  `title` varchar(255) DEFAULT NULL COMMENT '收藏内容的标题',
-  `url` varchar(255) DEFAULT NULL COMMENT '收藏内容的原文地址，不带域名',
-  `description` varchar(500) DEFAULT NULL COMMENT '收藏内容的描述',
-  `table` varchar(50) DEFAULT NULL COMMENT '收藏实体以前所在表，不带前缀',
-  `object_id` int(11) DEFAULT NULL COMMENT '收藏内容原来的主键id',
-  `createtime` int(11) DEFAULT NULL COMMENT '收藏时间',
-  PRIMARY KEY (`id`),
-  KEY `uid` (`uid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='用户收藏表';
-
--- ----------------------------
--- Records of xy_user_favorites
--- ----------------------------
+INSERT INTO `xy_users` VALUES ('1', 'admin', '###74bf77b9cff885839a35ce3a641ad911', 'admin', 'phprince@163.com', '', null, '0', null, null, '140.206.53.234', '2016-03-09 10:07:16', '2016-03-02 02:11:19', '', '1', '0', '1', '0', '');

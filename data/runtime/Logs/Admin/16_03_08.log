@@ -1,0 +1,11 @@
+[ 2016-03-08T22:28:35+08:00 ] 211.161.245.199 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002082s ]
+SQL: SHOW COLUMNS FROM `xy_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `xy_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xy_role_user` [ RunTime:0.0008s ]
+SQL: SELECT `role_id` FROM xy_role_user a INNER JOIN xy_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `xy_users` SET `user_login`='admin',`user_pass`='###74bf77b9cff885839a35ce3a641ad911',`user_nicename`='admin',`user_email`='phprince@163.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='211.161.245.199',`last_login_time`='2016-03-08 22:28:35',`create_time`='2016-03-02 02:11:19',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0005s ]
+
